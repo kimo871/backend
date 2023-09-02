@@ -5,20 +5,16 @@ const Router= express.Router()
 
 const {SignUp,Otp} = require("../Middlewares/index.js")
 
-const {SignUpController}= require("../Controllers/SignUp.js")
+const SignUpController= require("../Controllers/SignUp.js")
 
-const {SignInController} = require("../Controllers/SignIn.js")
+const SignInController = require("../Controllers/SignIn.js")
 
-const {Authentication} = require("../Middlewares/Authnetication.js")
+const Authentication = require("../Middlewares/Authnetication.js")
 const { RefreshToken, User } = require("../Models/index.js")
 const  { jwtDecode } = require("jwt-decode")
 
 
-
-
 Router.post("/SignUp",[SignUp],SignUpController)
-
-
 
 Router.post("/refresh-token",async (req,res)=>{
     let {refresh_token,Email} = req.cookies ;
