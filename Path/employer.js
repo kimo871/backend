@@ -6,9 +6,9 @@ const Router= express.Router()
 
 import {Mailer_Handler} from "../Controllers/Email.js"
 
-import Authentication from "../Middlewares/Authnetication.js"
+import {Authentication} from "../Middlewares/Authnetication.js"
 
-import Authorization from "../Middlewares/Authorize.js"
+import {Authorization} from "../Middlewares/Authorize.js"
 
 import { Job , User , Application } from "../Models/index.js"
 

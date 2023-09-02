@@ -1,4 +1,4 @@
-import  OtpHandler from "./Otp.js";
+import  {OtpHandler} from "./Otp.js";
 
 import  {SignUp} from  "./SignUp.js"
 

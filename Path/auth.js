@@ -1,17 +1,17 @@
 
 import {express} from 'express'
 
-import r from "../Config/Config.js"
+
 
 const Router= express.Router()
 
 import {Check,SignUp,Otp} from "../Middlewares/index.js"
 
-import  SignUpController from "../Controllers/SignUp.js"
+import  {SignUpController} from "../Controllers/SignUp.js"
 
-import SignInController from "../Controllers/SignIn.js"
+import {SignInController} from "../Controllers/SignIn.js"
 
-import  Authentication from "../Middlewares/Authnetication.js"
+import  {Authentication} from "../Middlewares/Authnetication.js"
 import { RefreshToken, User } from "../Models/index.js"
 import  { jwtDecode } from "jwt-decode"
 
