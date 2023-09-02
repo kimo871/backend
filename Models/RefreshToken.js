@@ -1,8 +1,6 @@
-import mongoose from "mongoose"
-import pkg from 'dotenv';
-const {dotenv} = pkg;
-dotenv.config({path:"../Config/.env"})
-import {v4 as uuidv4} from "uuid"
+const mongoose = require("mongoose")
+require("dotenv").config({path:"../Config/.env"})
+const {v4 : uuidv4} = require("uuid")
 let RefreshTokenscheme= new mongoose.Schema({
     token:  {type:String , required:true , unique:true},
     expiredAt : {type:Date , required:true},
@@ -35,4 +33,4 @@ RefreshTokenscheme.statics.createToken = async function (){
   let RefreshToken = new mongoose.model("RefreshToken",RefreshTokenscheme)
 
 
-export default  RefreshToken
+module.exports =   RefreshToken

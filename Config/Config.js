@@ -1,6 +1,5 @@
-import pkg from 'dotenv';
-const {dotenv} = pkg;
-dotenv.config()
+require("dotenv").config()
+
 module.exports = {
     PORT_NO :process.env.PORT_NO,
 

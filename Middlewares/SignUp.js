@@ -1,9 +1,9 @@
-import  mongoose from "mongoose"
-import  bcrypt from "bcrypt"
+const  mongoose = require("mongoose")
+const   bcrypt = require("bcrypt")
 
-import  {User} from "../Models/index.js"
+const  {User} = require("../Models/index.js")
 
-export default SignUp =  async (req,res,next)=>{
+module.exports = SignUp =  async (req,res,next)=>{
    const {Email,Phone , Name , Password} = req.body
 
    const Check  = await User.CheckExisted(Email,Phone)

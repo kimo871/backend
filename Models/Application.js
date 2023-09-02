@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+const mongoose = require("mongoose")
 
 let Application_scheme= new mongoose.Schema({
     Owner:{type:mongoose.SchemaTypes.ObjectId , ref:"User"},
@@ -19,4 +19,4 @@ let Application = new mongoose.model("Application",Application_scheme)
 
 
 
-export default Application
+module.exports =  Application

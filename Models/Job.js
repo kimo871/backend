@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+const mongoose = require("mongoose")
 
 let Job_Scheme = new mongoose.Schema({
   Company : {type:mongoose.SchemaTypes.ObjectId , required:true , ref:"User"},
@@ -18,4 +18,4 @@ let Job = new mongoose.model("Job",Job_Scheme)
 
 
 
-export default  Job
+module.exports =  Job

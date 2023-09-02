@@ -1,4 +1,4 @@
-import mongoose from  "mongoose"
+const mongoose = require("mongoose")
 
 let Role_scheme= new mongoose.Schema({
     Title : {type:String , required:true,unique:true},
@@ -56,4 +56,4 @@ let array = [{
 
   array.forEach((item)=> {item.Category="64f36d6e0f8664ca990ad414"; let t1 = new Role(item)})
 
-export default Role
+module.exports =  Role

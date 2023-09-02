@@ -1,4 +1,4 @@
-import  mongoose from "mongoose"
+const  mongoose = require("mongoose")
 
 
 
@@ -43,5 +43,4 @@ User_Scheme.statics.CheckExisted= async function(email,phone){
 
 let User = new mongoose.model("User",User_Scheme)
 
-
-export default  User
+module.exports =  User

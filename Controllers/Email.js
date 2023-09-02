@@ -1,10 +1,10 @@
 
-import nodemailer from "nodemailer"
-import mongoose from "mongoose"
+const nodemailer = require("nodemailer")
+const mongoose = require("mongoose")
 
-import  {Application , Job} from "../Models/index.js"
+const {Application , Job} = require("../Models/index.js")
 
-import {MAIL_USERNAME , MAIL_PASSWORD} from "../Config/Config.js"
+const {MAIL_USERNAME , MAIL_PASSWORD} = require("../Config/Config.js")
 
 console.log(MAIL_USERNAME,MAIL_PASSWORD)
 
@@ -55,4 +55,4 @@ const Mailer_Handler = (type)=>{
 }
 
 
-export {Mailer_Handler};
+module.exports =  {Mailer_Handler};

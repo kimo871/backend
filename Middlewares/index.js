@@ -1,11 +1,11 @@
-import  OtpHandler from "./Otp.js";
+const OtpHandler = require("./Otp.js");
 
-import  SignUp from  "./SignUp.js"
+const SignUp = require("./SignUp.js")
 
 
 console.log("func",OtpHandler)
 
-export default {
+module.exports =  {
     Otp : OtpHandler ,
     SignUp : SignUp 
 }

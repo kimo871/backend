@@ -1,10 +1,10 @@
-import  jwt from "jsonwebtoken"
+const  jwt = require("jsonwebtoken")
 
 
-import  {decode} from "jwt-decode"
-import { RefreshToken } from "../Models/index.js"
+const decode  =  require("jwt-decode")
+const { RefreshToken } = require("../Models/index.js")
 
-import  {SECRET_KEY , EXP_PER} from "../Config/Config.js"
+const {SECRET_KEY , EXP_PER} = require("../Config/Config.js")
 
 let Authenticate = (req,res,next)=>{
    
@@ -29,4 +29,4 @@ let Authenticate = (req,res,next)=>{
 
 }
 
-export default  Authenticate;
+module.exports =  Authenticate;

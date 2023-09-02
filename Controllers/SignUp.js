@@ -1,7 +1,7 @@
 
-import  bcrypt from "bcrypt"
-import  jwt from "jsonwebtoken"
-import User from "../Models/User.js"
+const  bcrypt = require("bcrypt")
+const  jwt = require("jsonwebtoken")
+const  User = require("../Models/User.js")
 
 
 const  SignUp = async  (req,res)=>{
@@ -62,4 +62,4 @@ catch(err){
 
 
 
-export default SignUp;
+module.exports =  SignUp;

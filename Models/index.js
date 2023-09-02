@@ -1,22 +1,22 @@
 
 
-import Application from "./Application.js"
+const Application = require("./Application.js")
 
-import Job from "./Job.js"
+const Job = require("./Job.js")
 
-import RefreshToken from "./RefreshToken.js"
+const RefreshToken = require("./RefreshToken.js")
 
-import User from "./User.js"
+const  User = require("./User.js")
 
-import Role from "./Role.js"
+const Role = require("./Role.js")
 
-import  Category from "./Category.js"
+const  Category = require("./Category.js")
 
-import  City from "./City.js"
+const  City = require("./City.js")
 
-import  Country  from "./Country.js"
-
-
+const  Country  = require("./Country.js")
 
 
-export {Job,Application,RefreshToken , User, Category , Role , City , Country}
+
+
+module.exports =  {Job,Application,RefreshToken , User, Category , Role , City , Country}

@@ -1,5 +1,5 @@
-import { ObjectId } from "mongodb"
-import mongoose from "mongoose"
+const { ObjectId } = require("mongodb")
+const mongoose = require("mongoose")
 
 let City_scheme= new mongoose.Schema({
     Name : {type:String , required:true,unique:true},
@@ -317,4 +317,4 @@ console.log(modified_array)
     
 
 
-export default City
+module.exports =  City

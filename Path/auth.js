@@ -1,19 +1,19 @@
 
-import {express} from 'express'
+const {express} = require('express')
 
 
 
 const Router= express.Router()
 
-import {SignUp,Otp} from "../Middlewares/index.js"
+const {SignUp,Otp} = require("../Middlewares/index.js")
 
-import  {SignUpController} from "../Controllers/SignUp.js"
+const {SignUpController}= require("../Controllers/SignUp.js")
 
-import {SignInController} from "../Controllers/SignIn.js"
+const {SignInController} = require("../Controllers/SignIn.js")
 
-import  {Authentication} from "../Middlewares/Authnetication.js"
-import { RefreshToken, User } from "../Models/index.js"
-import  { jwtDecode } from "jwt-decode"
+const {Authentication} = require("../Middlewares/Authnetication.js")
+const { RefreshToken, User } = require("../Models/index.js")
+const  { jwtDecode } = require("jwt-decode")
 
 
 Router.post("/employee/Register",[Check,SignUp],SignUpController)
@@ -88,4 +88,4 @@ Router.get("/login",Authentication,(req,res)=>{
 
 
 
-export default Router
+module.exports = Router

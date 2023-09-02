@@ -1,5 +1,5 @@
-import mongoose from "mongoose"
-import { User } from "../Models/index.js"
+const  mongoose = require("mongoose")
+const { User } = require("../Models/index.js")
 
 let Authorize_wrapper = (allowed_role)=> (req,res,next)=>{
    //console.log(req.cookies)
@@ -15,4 +15,4 @@ let Authorize_wrapper = (allowed_role)=> (req,res,next)=>{
 }
 
 
-export default  Authorize_wrapper;
+module.exports =  Authorize_wrapper;

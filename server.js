@@ -1,27 +1,27 @@
-import express from 'express'
+const express = require('express')
 
-import {process} from 'process'
+const {process} = require('process')
 
-import {cors} from 'cors'
+const {cors} =  require('cors')
 
 
-import {mongoose} from 'mongoose'
+const {mongoose} = require('mongoose')
 
-import {Router} from "./Path/auth.js"
+const {Router} = require("./Path/auth.js")
 
-import Router2 from "./Path/employer.js"
+const Router2 = require("./Path/employer.js")
 
-import {path} from "path"
+const {path} = require("path")
 
-import {PORT_NO , DB_USERNAME , DB_PASSWORD} from "./Config/Config.js"
+const {PORT_NO , DB_USERNAME , DB_PASSWORD} = require("./Config/Config.js")
 console.log(DB_USERNAME,DB_PASSWORD)
 
-import cookie from "cookie-parser"
+const cookie = require("cookie-parser")
 
-import session from "express-session"
+const session = require("express-session")
 
-import Authentication from "./Middlewares/Authnetication.js"
-import { User, RefreshToken , Role , Category , City  ,Country , Job, Application } from "./Models/index.js"
+const Authentication = require("./Middlewares/Authnetication.js")
+const { User, RefreshToken , Role , Category , City  ,Country , Job, Application } = require("./Models/index.js")
 
  
 const  app = express();

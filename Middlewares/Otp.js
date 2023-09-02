@@ -1,5 +1,5 @@
-import  mongoose from "mongoose"
-import  { User } from "../Models/index.js"
+const  mongoose = require("mongoose")
+const  { User } = require( "../Models/index.js")
 
   const OtpHandler = (req,res,next)=>{
       const {user} = req.user
@@ -16,4 +16,4 @@ import  { User } from "../Models/index.js"
       
   }
 
-  export default  OtpHandler
+module.exports =   OtpHandler

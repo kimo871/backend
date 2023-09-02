@@ -1,4 +1,4 @@
-import  mongoose from "mongoose"
+const  mongoose = require("mongoose")
 
 let Category_scheme= new mongoose.Schema({
     category : {type:String , required:true , unique:true},
@@ -14,4 +14,4 @@ Category.updateOne({category:"Sales & Business Development"},{$unset:{"jobs":""}
 
 
 
-export default Category
+module.exports = Category

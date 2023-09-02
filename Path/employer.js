@@ -1,16 +1,16 @@
-import express from "express" 
-import mongoose from "mongoose"
+const express = require("express")
+const mongoose = require("mongoose")
 
 
 const Router= express.Router()
 
-import {Mailer_Handler} from "../Controllers/Email.js"
+const {Mailer_Handler} = require("../Controllers/Email.js")
 
-import {Authentication} from "../Middlewares/Authnetication.js"
+const {Authentication} = require("../Middlewares/Authnetication.js")
 
-import {Authorization} from "../Middlewares/Authorize.js"
+const {Authorization} = require("../Middlewares/Authorize.js")
 
-import { Job , User , Application } from "../Models/index.js"
+const { Job , User , Application } = require( "../Models/index.js")
 
 
 // posting jobs page
@@ -145,4 +145,4 @@ Router.post("/Edit/Profile",Authentication,async(req,res)=>{
 
 
 
-export default  Router
+module.exports =   Router

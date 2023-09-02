@@ -1,8 +1,8 @@
-import { User ,  RefreshToken } from "../Models/index.js"
-import  bcrypt  from "bcrypt"
-import  jwt from "jsonwebtoken"
+const { User ,  RefreshToken } = require("../Models/index.js")
+const bcrypt  = require("bcrypt")
+const jwt = require("jsonwebtoken")
 
-import {SECRET_KEY , EXP_PER} from "../Config/Config.js"
+const {SECRET_KEY , EXP_PER} = require("../Config/Config.js")
 
 console.log(process.env.SECRET_KEY)
 
@@ -64,5 +64,5 @@ catch(err){
 
 }
 
-export default SignIn
+module.exports = SignIn
 
