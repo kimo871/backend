@@ -1,7 +1,7 @@
 import pkg from 'dotenv';
 const {dotenv} = pkg;
 dotenv.config()
-let obj = {
+module.exports = {
     PORT_NO :process.env.PORT_NO,
 
    DB_URL : process.env.DB_URL,
@@ -24,4 +24,4 @@ let obj = {
    DB_PASSWORD : process.env.DB_PASSWORD
    
 }
-export default obj 
+
