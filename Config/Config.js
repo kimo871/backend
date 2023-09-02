@@ -1,6 +1,6 @@
 import pkg from 'dotenv';
 const {dotenv} = pkg;
-
+dotenv.config()
 let obj = {
     PORT_NO :process.env.PORT_NO,
 
