@@ -3,7 +3,7 @@ import  bcrypt from "bcrypt"
 import  jwt from "jsonwebtoken"
 import  {Seeker,Poster,RefreshToken} from "../Models/index.js"
 import User from "../Models/User.js"
-import  {SECRET_KEY , HASH_KEY,EXP_PER} from "../Config/Config.js"
+
 
 const  SignUp = async  (req,res)=>{
 let u1;
