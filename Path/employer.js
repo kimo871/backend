@@ -5,13 +5,13 @@ import r  from "../Config/Config"
 
 const Router= express.Router()
 
-import {Mailer_Handler} from "../Controllers/Email"
+import {Mailer_Handler} from "../Controllers/Email.js"
 
-import Authentication from "../Middlewares/Authnetication"
+import Authentication from "../Middlewares/Authnetication.js"
 
-import Authorization from "../Middlewares/Authorize"
+import Authorization from "../Middlewares/Authorize.js"
 
-import { Job , User , Application } from "../Models"
+import { Job , User , Application } from "../Models/index.js"
 
 
 // posting jobs page

@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import { User } from "../Models"
+import { User } from "../Models/index.js"
 
 let Authorize_wrapper = (allowed_role)=> (req,res,next)=>{
    //console.log(req.cookies)

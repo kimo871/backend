@@ -1,9 +1,9 @@
-require("express")
-const bcrypt = require("bcrypt")
-const jwt = require("jsonwebtoken")
-const  {Seeker,Poster,RefreshToken} = require("../Models/index")
-const User = require("../Models/User")
-const {SECRET_KEY , HASH_KEY,EXP_PER} = require("../Config/Config")
+
+import  bcrypt from "bcrypt"
+import  jwt from "jsonwebtoken"
+import  {Seeker,Poster,RefreshToken} from "../Models/index.js"
+import User from "../Models/User"
+import  {SECRET_KEY , HASH_KEY,EXP_PER} from "../Config/Config.js"
 
 const  SignUp = async  (req,res)=>{
 let u1;

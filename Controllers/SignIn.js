@@ -1,8 +1,8 @@
-const { User ,  RefreshToken } = require("../Models")
-const bcrypt  = require("bcrypt")
-const jwt = require("jsonwebtoken")
+import { User ,  RefreshToken } from "../Models/index.js"
+import  bcrypt  from "bcrypt"
+import  jwt from "jsonwebtoken"
 
-const {SECRET_KEY , EXP_PER} = require("../Config/Config")
+import {SECRET_KEY , EXP_PER} from "../Config/Config.js"
 
 console.log(process.env.SECRET_KEY)
 

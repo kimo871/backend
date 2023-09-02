@@ -1,7 +1,7 @@
 import  mongoose from "mongoose"
 import  bcrypt from "bcrypt"
 
-import  {User} from "../Models/index"
+import  {User} from "../Models/index.js"
 
 module.exports.SignUp =  async (req,res,next)=>{
    const {Email,Phone , Name , Password} = req.body

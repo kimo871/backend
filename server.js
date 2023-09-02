@@ -1,4 +1,4 @@
-import {express} from 'express'
+import express from 'express'
 
 import {process} from 'process'
 
@@ -7,13 +7,13 @@ import {cors} from 'cors'
 
 import {mongoose} from 'mongoose'
 
-import {Router} from "./Path/auth"
+import {Router} from "./Path/auth.js"
 
-import Router2 from "./Path/employer"
+import Router2 from "./Path/employer.js"
 
 import {path} from "path"
 
-import {PORT_NO , DB_USERNAME , DB_PASSWORD} from "./Config/Config"
+import {PORT_NO , DB_USERNAME , DB_PASSWORD} from "./Config/Config.js"
 console.log(DB_USERNAME,DB_PASSWORD)
 
 import cookie from "cookie-parser"

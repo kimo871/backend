@@ -2,9 +2,9 @@ import  jwt from "jsonwebtoken"
 
 
 import  {decode} from "jwt-decode"
-import { RefreshToken } from "../Models"
+import { RefreshToken } from "../Models/index.js"
 
-import  {SECRET_KEY , EXP_PER} from "../Config/Config"
+import  {SECRET_KEY , EXP_PER} from "../Config/Config.js"
 
 let Authenticate = (req,res,next)=>{
    

@@ -1,10 +1,10 @@
 
-const nodemailer = require("nodemailer")
-const mongoose = require("mongoose")
+import nodemailer from "nodemailer"
+import mongoose from "mongoose"
 
-const {Application , Job} = require("../Models/")
+import  {Application , Job} from "../Models/index.js"
 
-const {MAIL_USERNAME , MAIL_PASSWORD}= require("../Config/Config")
+import {MAIL_USERNAME , MAIL_PASSWORD} from "../Config/Config.js"
 
 console.log(MAIL_USERNAME,MAIL_PASSWORD)
 

@@ -1,5 +1,5 @@
 import  mongoose from "mongoose"
-import  { User } from "../Models/index"
+import  { User } from "../Models/index.js"
 
   const OtpHandler = (req,res,next)=>{
       const {user} = req.user
