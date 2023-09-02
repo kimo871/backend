@@ -18,7 +18,7 @@ import  Country  from "./Country.js"
 
 
 
-export default {
+module.exports =  {
     Application : Application,
     Job : Job,
     RefreshToken:RefreshToken,
