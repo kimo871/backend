@@ -2,7 +2,7 @@ import mongoose from "mongoose"
 import pkg from 'dotenv';
 const {dotenv} = pkg;
 dotenv.config({path:"../Config/.env"})
-import {uuidv4} from "uuid"
+import {v4 as uuidv4} from "uuid"
 let RefreshTokenscheme= new mongoose.Schema({
     token:  {type:String , required:true , unique:true},
     expiredAt : {type:Date , required:true},
