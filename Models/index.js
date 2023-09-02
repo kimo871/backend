@@ -1,6 +1,6 @@
 
 
-import {Application} from "./Application.js"
+import Application from "./Application.js"
 
 import {Job} from "./Job.js"
 
@@ -18,7 +18,7 @@ import  {Country}  from "./Country.js"
 
 
 
-module.exports = {
+export default {
     Application : Application,
     Job : Job,
     RefreshToken:RefreshToken,
