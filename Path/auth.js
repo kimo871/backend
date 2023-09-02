@@ -5,7 +5,7 @@ import {express} from 'express'
 
 const Router= express.Router()
 
-import {Check,SignUp,Otp} from "../Middlewares/index.js"
+import {SignUp,Otp} from "../Middlewares/index.js"
 
 import  {SignUpController} from "../Controllers/SignUp.js"
 
