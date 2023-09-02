@@ -1,6 +1,6 @@
 import pkg from 'dotenv';
 const {dotenv} = pkg;
-module.exports = {
+export default  {
     PORT_NO : process.env.PORT_NO,
 
     DB_URL : process.env.DB_URL,

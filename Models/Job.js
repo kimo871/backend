@@ -18,4 +18,4 @@ let Job = new mongoose.model("Job",Job_Scheme)
 
 
 
-module.exports = Job
+export default  Job

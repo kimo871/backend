@@ -3,7 +3,7 @@ import  bcrypt from "bcrypt"
 
 import  {User} from "../Models/index.js"
 
-module.exports.SignUp =  async (req,res,next)=>{
+export default SignUp =  async (req,res,next)=>{
    const {Email,Phone , Name , Password} = req.body
 
    const Check  = await User.CheckExisted(Email,Phone)

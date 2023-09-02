@@ -317,5 +317,4 @@ console.log(modified_array)
     
 
 
-
-module.exports = City
+export default City

@@ -56,4 +56,4 @@ let array = [{
 
   array.forEach((item)=> {item.Category="64f36d6e0f8664ca990ad414"; let t1 = new Role(item)})
 
-module.exports = Role
+export default Role

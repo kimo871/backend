@@ -1,6 +1,6 @@
 import {Poster,Seeker} from "../Models/index.js"
 
-module.exports.Check = (req,res,next)=>{
+export default Check = (req,res,next)=>{
     const y = req.url
     if(y.startsWith("/employee/")){
       req.role = "Seeker";

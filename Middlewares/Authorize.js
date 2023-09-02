@@ -15,4 +15,4 @@ let Authorize_wrapper = (allowed_role)=> (req,res,next)=>{
 }
 
 
-module.exports = Authorize_wrapper;
+export default  Authorize_wrapper;

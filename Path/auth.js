@@ -88,4 +88,4 @@ Router.get("/login",Authentication,(req,res)=>{
 
 
 
-module.exports = Router
+export default Router

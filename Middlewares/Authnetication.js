@@ -29,4 +29,4 @@ let Authenticate = (req,res,next)=>{
 
 }
 
-module.exports = Authenticate;
+export default  Authenticate;

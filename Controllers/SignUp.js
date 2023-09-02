@@ -63,4 +63,4 @@ catch(err){
 
 
 
-module.exports = SignUp;
+export default SignUp;

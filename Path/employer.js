@@ -145,4 +145,4 @@ Router.post("/Edit/Profile",Authentication,async(req,res)=>{
 
 
 
-module.exports = Router
+export default  Router

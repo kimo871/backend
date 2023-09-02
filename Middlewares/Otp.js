@@ -16,4 +16,4 @@ import  { User } from "../Models/index.js"
       
   }
 
-  module.exports  = OtpHandler
+  export default  OtpHandler

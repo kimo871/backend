@@ -17,4 +17,6 @@ let Application = new mongoose.model("Application",Application_scheme)
 
 
 
-module.exports = Application
+
+
+export default Application

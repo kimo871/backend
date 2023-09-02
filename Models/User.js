@@ -44,4 +44,4 @@ User_Scheme.statics.CheckExisted= async function(email,phone){
 let User = new mongoose.model("User",User_Scheme)
 
 
-module.exports = User
+export default  User

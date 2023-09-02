@@ -55,4 +55,4 @@ const Mailer_Handler = (type)=>{
 }
 
 
-module.exports= {Mailer_Handler};
+export {Mailer_Handler};

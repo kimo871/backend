@@ -35,4 +35,4 @@ RefreshTokenscheme.statics.createToken = async function (){
   let RefreshToken = new mongoose.model("RefreshToken",RefreshTokenscheme)
 
 
-module.exports = RefreshToken
+export default  RefreshToken

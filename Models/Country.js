@@ -8,4 +8,4 @@ let Country = new mongoose.model("Country",Country_scheme)
 
 
 
-module.exports = Country
+export default  Country

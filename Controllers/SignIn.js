@@ -64,5 +64,5 @@ catch(err){
 
 }
 
-module.exports = SignIn
+export default SignIn
 

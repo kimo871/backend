@@ -14,4 +14,4 @@ Category.updateOne({category:"Sales & Business Development"},{$unset:{"jobs":""}
 
 
 
-module.exports = Category
+export default Category
