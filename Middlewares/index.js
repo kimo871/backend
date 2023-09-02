@@ -8,7 +8,6 @@ console.log("func",OtpHandler)
 
 export default {
     Otp : OtpHandler ,
-    SignUp : SignUp ,
-    Check  : Check
+    SignUp : SignUp 
 }
 
