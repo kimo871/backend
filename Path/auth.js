@@ -14,9 +14,7 @@ const { RefreshToken, User } = require("../Models/index.js")
 const  { jwtDecode } = require("jwt-decode")
 
 
-Router.post("/employee/Register",[Check,SignUp],SignUpController)
 
-Router.post("/employer/Register",[Check,SignUp],SignUpController)
 
 Router.post("/SignUp",[SignUp],SignUpController)
 
