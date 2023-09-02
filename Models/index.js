@@ -18,13 +18,5 @@ import  Country  from "./Country.js"
 
 
 
-module.exports =  {
-    Application : Application,
-    Job : Job,
-    RefreshToken:RefreshToken,
-    User:User,
-    Category,
-    Role:Role,
-    City:City,
-    Country:Country,
-}
+
+export {Job,Application,RefreshToken , User, Category , Role , City , Country}
