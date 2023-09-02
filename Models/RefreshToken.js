@@ -1,6 +1,7 @@
-const mongoose = require("mongoose")
-require("dotenv").config({path:"../Config/.env"})
-const {v4 : uuidv4} = require("uuid")
+import mongoose from "mongoose"
+import {dotenv} from "dotenv"
+dotenv.config({path:"../Config/.env"})
+import {uuidv4} from "uuid"
 let RefreshTokenscheme= new mongoose.Schema({
     token:  {type:String , required:true , unique:true},
     expiredAt : {type:Date , required:true},

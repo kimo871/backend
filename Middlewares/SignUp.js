@@ -1,7 +1,7 @@
-const mongoose = require("mongoose")
-const bcrypt = require("bcrypt")
+import  mongoose from "mongoose"
+import  bcrypt from "bcrypt"
 
-const {User}=  require("../Models/index")
+import  {User} from "../Models/index"
 
 module.exports.SignUp =  async (req,res,next)=>{
    const {Email,Phone , Name , Password} = req.body

@@ -1,18 +1,19 @@
-const express = require("express")
 
-const r = require("../Config/Config")
+import {express} from 'express'
+
+import r from "../Config/Config"
 
 const Router= express.Router()
 
-const {Check,SignUp,Otp} = require("../Middlewares/index")
+import {Check,SignUp,Otp} from "../Middlewares/index"
 
-const SignUpController = require("../Controllers/SignUp")
+import  SignUpController from "../Controllers/SignUp"
 
-const SignInController = require("../Controllers/SignIn")
+import SignInController from "../Controllers/SignIn"
 
-const Authentication = require("../Middlewares/Authnetication")
-const { RefreshToken, User } = require("../Models")
-const { default: jwtDecode } = require("jwt-decode")
+import  Authentication from "../Middlewares/Authnetication"
+import { RefreshToken, User } from "../Models"
+import  { jwtDecode } from "jwt-decode"
 
 
 Router.post("/employee/Register",[Check,SignUp],SignUpController)

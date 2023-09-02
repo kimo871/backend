@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+import mongoose from "mongoose"
 
 let Application_scheme= new mongoose.Schema({
     Owner:{type:mongoose.SchemaTypes.ObjectId , ref:"User"},

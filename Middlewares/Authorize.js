@@ -1,5 +1,5 @@
-const mongoose = require("mongoose")
-const { User } = require("../Models");
+import mongoose from "mongoose"
+import { User } from "../Models"
 
 let Authorize_wrapper = (allowed_role)=> (req,res,next)=>{
    //console.log(req.cookies)

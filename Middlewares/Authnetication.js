@@ -1,10 +1,10 @@
-const jwt = require("jsonwebtoken")
+import  jwt from "jsonwebtoken"
 
 
-const decode = require("jwt-decode")
-const { RefreshToken } = require("../Models")
+import  {decode} from "jwt-decode"
+import { RefreshToken } from "../Models"
 
-const {SECRET_KEY , EXP_PER} = require("../Config/Config")
+import  {SECRET_KEY , EXP_PER} from "../Config/Config"
 
 let Authenticate = (req,res,next)=>{
    

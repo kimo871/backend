@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+import  mongoose from "mongoose"
 
 let Category_scheme= new mongoose.Schema({
     category : {type:String , required:true , unique:true},

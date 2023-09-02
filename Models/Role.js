@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+import mongoose from  "mongoose"
 
 let Role_scheme= new mongoose.Schema({
     Title : {type:String , required:true,unique:true},

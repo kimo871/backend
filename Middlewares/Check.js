@@ -1,4 +1,4 @@
-const {Poster,Seeker} = require("../Models/index")
+import {Poster,Seeker} from "../Models/index"
 
 module.exports.Check = (req,res,next)=>{
     const y = req.url

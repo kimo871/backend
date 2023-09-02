@@ -1,5 +1,5 @@
-const mongoose = require("mongoose")
-const { RefreshToken } = require(".")
+import  mongoose from "mongoose"
+
 
 
 let User_Scheme = new mongoose.Schema({

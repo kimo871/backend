@@ -1,8 +1,8 @@
-const OtpHandler= require("./Otp");
+import  OtpHandler from "./Otp";
 
-const {SignUp}= require("./SignUp")
+import  {SignUp} from  "./SignUp"
 
-const {Check}= require("./Check")
+import  {Check} from "./Check"
 
 console.log("func",OtpHandler)
 

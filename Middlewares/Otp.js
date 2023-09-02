@@ -1,5 +1,5 @@
-const mongoose = require("mongoose")
-const { User }=  require("../Models/index")
+import  mongoose from "mongoose"
+import  { User } from "../Models/index"
 
   const OtpHandler = (req,res,next)=>{
       const {user} = req.user

@@ -1,5 +1,5 @@
-const { ObjectId } = require("mongodb")
-const mongoose = require("mongoose")
+import { ObjectId } from "mongodb"
+import mongoose from "mongoose"
 
 let City_scheme= new mongoose.Schema({
     Name : {type:String , required:true,unique:true},

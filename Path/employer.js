@@ -1,17 +1,17 @@
-const express = require("express")
-const mongoose = require("mongoose")
+import express from "express" 
+import mongoose from "mongoose"
 
-const r = require("../Config/Config")
+import r  from "../Config/Config"
 
 const Router= express.Router()
 
-const {Mailer_Handler} = require("../Controllers/Email")
+import {Mailer_Handler} from "../Controllers/Email"
 
-const Authentication = require("../Middlewares/Authnetication")
+import Authentication from "../Middlewares/Authnetication"
 
-const Authorization = require("../Middlewares/Authorize")
+import Authorization from "../Middlewares/Authorize"
 
-const { Job , User , Application } = require("../Models")
+import { Job , User , Application } from "../Models"
 
 
 // posting jobs page

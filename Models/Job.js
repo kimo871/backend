@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+import mongoose from "mongoose"
 
 let Job_Scheme = new mongoose.Schema({
   Company : {type:mongoose.SchemaTypes.ObjectId , required:true , ref:"User"},

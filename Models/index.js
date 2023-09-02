@@ -1,20 +1,20 @@
 
 
-const Application = require("./Application")
+import Application from "./Application"
 
-const Job = require("./Job")
+import Job from "./Job"
 
-const RefreshToken = require("./RefreshToken")
+import RefreshToken from "./RefreshToken"
 
-const User = require("./User")
+import User from "./User"
 
-const Role = require("./Role")
+import Role from "./Role"
 
-const Category = require("./Category")
+import  Category from "./Category"
 
-const City = require("./City")
+import  City from "./City"
 
-const Country  = require("./Country")
+import  Country  from "./Country"
 
 
 
