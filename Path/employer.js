@@ -1,7 +1,6 @@
 import express from "express" 
 import mongoose from "mongoose"
 
-import r  from "../Config/Config"
 
 const Router= express.Router()
 
