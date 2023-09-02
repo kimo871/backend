@@ -21,7 +21,7 @@ import cookie from "cookie-parser"
 import session from "express-session"
 
 import Authentication from "./Middlewares/Authnetication.js"
-import { User, RefreshToken , Role , Category , City  ,Country , Job, Application } from "./Models"
+import { User, RefreshToken , Role , Category , City  ,Country , Job, Application } from "./Models/index.js"
 
  
 const  app = express();
