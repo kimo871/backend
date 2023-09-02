@@ -1,0 +1,29 @@
+{"fname":"Mohamed" , "lname":"Kamal" , "username":"dd","phone":"01144691638" , "password":"kimo98$jfd"  , "email":"mk5391130@gmail.com"}
+
+{"Company_Name":"ddd","Company_Size":600,"email":"dskjd@gmail.com","password":"dsfds","phone":"01144691638"}
+
+-everyone needs to access resource
+
+1.Check  tokens
+case1 expired redirect to refresh token url : case1 refresh tokens synced so generate access_token
+                                              case2 expired so loghim out
+                                              case3 not same so loghim 
+case2 not expired so pass this to middleware status which if not activated blocks actions
+
+
+
+"access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImRmZ2ZnZmZmc3NzIiwiaWF0IjoxNjkyNjk0NjI1LCJleHAiOjE2OTI2OTU4MjV9.Orub6j48Ev8oyqD6qG6Vqt8CjgTrfbOWZHrmCybqYsk"
+
+
+"email": "dfgfgfffsss",
+"password": "fgfg"
+
+
+http://127.0.0.1:3000/action/Job/Apply/5
+--------------------------------------------------------------
+{
+    "name":"Ahmed Kamal",
+    "email":"mk5391130@gmail.com",
+    "phone":"01144691638",
+    "password":"donottry"
+}

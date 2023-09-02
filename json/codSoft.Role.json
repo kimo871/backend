@@ -1,0 +1,462 @@
+[{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114bf"
+  },
+  "Title": "Project manager",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c0"
+  },
+  "Title": "Sales manager",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c1"
+  },
+  "Title": "Actuary",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c2"
+  },
+  "Title": "Business teacher",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c3"
+  },
+  "Title": "Business reporter",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c4"
+  },
+  "Title": "Admissions representative",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c5"
+  },
+  "Title": "Office manager",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c6"
+  },
+  "Title": "Office clerk",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c7"
+  },
+  "Title": "Assistant buyer",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e4e74d3584546ece5114c8"
+  },
+  "Title": "Business development manager",
+  "Category": "64e4e51c3584546ece5114b5"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe91"
+  },
+  "Title": "Civil engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe92"
+  },
+  "Title": "Mechanical engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe93"
+  },
+  "Title": "Chemical engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe94"
+  },
+  "Title": "Biological engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe95"
+  },
+  "Title": "Nuclear engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe96"
+  },
+  "Title": "Aerospace engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe97"
+  },
+  "Title": "Electrical engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe98"
+  },
+  "Title": "Environmental engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe99"
+  },
+  "Title": "Geological engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe9a"
+  },
+  "Title": "Marine engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe9b"
+  },
+  "Title": "Petroleum engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe9c"
+  },
+  "Title": "Safety engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe9d"
+  },
+  "Title": "Product engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe9e"
+  },
+  "Title": "Compliance engineer",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e8f70fee7878d4a6c5fe9f"
+  },
+  "Title": "Senior process engineer﻿",
+  "Category": "64e4e51c3584546ece5114b2"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea0"
+  },
+  "Title": "Financial planner",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea1"
+  },
+  "Title": "Financial adviser",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea2"
+  },
+  "Title": "Budget analyst",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea3"
+  },
+  "Title": "Credit analyst",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea4"
+  },
+  "Title": "Financial services representative",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea5"
+  },
+  "Title": "Financial manager",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea6"
+  },
+  "Title": "Cost estimator",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea7"
+  },
+  "Title": "Loan officer",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea8"
+  },
+  "Title": "Investment banking analyst",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e90041ee7878d4a6c5fea9"
+  },
+  "Title": "Financial auditor",
+  "Category": "64e4e51c3584546ece5114b6"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feaa"
+  },
+  "Title": "UX designer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feab"
+  },
+  "Title": "UI developer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feac"
+  },
+  "Title": "IT manager",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5fead"
+  },
+  "Title": "Computer programmer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feae"
+  },
+  "Title": "SQL developer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feaf"
+  },
+  "Title": "Software developer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb0"
+  },
+  "Title": "Web administrator",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb1"
+  },
+  "Title": "Data architect",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb2"
+  },
+  "Title": "Business intelligence developer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb3"
+  },
+  "Title": "Mobile application developer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb4"
+  },
+  "Title": "Information security analyst",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb5"
+  },
+  "Title": "Front-end web developer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb6"
+  },
+  "Title": "Java developer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb7"
+  },
+  "Title": "Database manager",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb8"
+  },
+  "Title": "Software engineer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e9030bee7878d4a6c5feb9"
+  },
+  "Title": "Back-end web developer",
+  "Category": "64e4e51c3584546ece5114bc"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5feba"
+  },
+  "Title": "Human resources manager",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5febb"
+  },
+  "Title": "Compensations and benefits manager",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5febc"
+  },
+  "Title": "Administrative assistant",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5febd"
+  },
+  "Title": "Human resources generalist",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5febe"
+  },
+  "Title": "Talent acquisition coordinator",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5febf"
+  },
+  "Title": "Executive recruiter",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec0"
+  },
+  "Title": "Human resources specialist",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec1"
+  },
+  "Title": "Human resources director",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec2"
+  },
+  "Title": "Human resources assistant",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec3"
+  },
+  "Title": "Labor relations specialist",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec4"
+  },
+  "Title": "Human resources consultant",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec5"
+  },
+  "Title": "International human resources associate",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec6"
+  },
+  "Title": "Human resources systems administrator",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec7"
+  },
+  "Title": "Compensation advisor",
+  "Category": "64e4e51c3584546ece5114b1"
+},
+{
+  "_id": {
+    "$oid": "64e90532ee7878d4a6c5fec8"
+  },
+  "Title": "Training and development manager",
+  "Category": "64e4e51c3584546ece5114b1"
+}]
