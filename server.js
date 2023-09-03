@@ -27,7 +27,7 @@ const  app = express();
 
 
 app.use(cors({
-    origin:"*",
+    origin:"https://codsoft-1-z2b7.onrender.com",
     credentials:true
 }))
 
@@ -46,7 +46,7 @@ app.use(session({
     secret:"secret",
     resave:false,
     cookie:{
-        secure:false,
+        secure:true,
         maxAge:1000*60*60*24,
         SameSite:"none",
         httpOnly:false

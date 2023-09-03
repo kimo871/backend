@@ -36,10 +36,11 @@ const SignIn =  async(req,res)=>{
             res.header("Access-Control-Allow-Headers","*");
             res.header('Access-Control-Allow-Credentials', true);
             res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-            res.cookie("access_token",token,{path:"/*",httpOnly:false,SameSite:"none",secure:false})
-            res.cookie("refresh_token",refresh.token,{path:"/",httpOnly:false,secure:false,SameSite:"none"})
+            res.header("Access-Control-Allow-Origin","https://codsoft-1-z2b7.onrender.com")
+            res.cookie("access_token",token,{path:"/*",httpOnly:false,SameSite:"none",secure:true})
+            res.cookie("refresh_token",refresh.token,{path:"/",httpOnly:false,secure:true,SameSite:"none"})
             res.cookie("email",email,{path:"/*",secure:false,SameSite:"none"})
-            res.cookie("user_id",result._id,{path:"/*",httpOnly:false,secure:false,SameSite:"none"})
+            res.cookie("user_id",result._id,{path:"/*",httpOnly:false,secure:true,SameSite:"none"})
 
             let obj = Object.assign({},result._doc)
             delete obj.Password; delete obj.Token;
