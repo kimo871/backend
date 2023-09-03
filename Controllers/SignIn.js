@@ -36,10 +36,10 @@ const SignIn =  async(req,res)=>{
             res.header("Access-Control-Allow-Headers","*");
             res.header('Access-Control-Allow-Credentials', true);
             res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-            res.cookie("access_token",token,{path:"/",httpOnly:false,sameSite:"none",secure:true,domain:"codsoft-1-z2b7.onrender.com/"})
-            res.cookie("refresh_token",refresh.token,{path:"/",httpOnly:false,secure:true,sameSite:"none",domain:"https://codsoft-1-z2b7.onrender.com/"})
-            res.cookie("email",email,{path:"/",secure:false,httpOnly:false,sameSite:"none",domain:"https://codsoft-1-z2b7.onrender.com/"})
-            res.cookie("user_id",result._id,{path:"/",httpOnly:false,secure:true,sameSite:"none",domain:"https://codsoft-1-z2b7.onrender.com/"})
+            res.cookie("access_token",token,{path:"/",httpOnly:false,sameSite:"none",secure:true})
+            res.cookie("refresh_token",refresh.token,{path:"/",httpOnly:false,secure:true,sameSite:"none"})
+            res.cookie("email",email,{path:"/",secure:false,httpOnly:false,sameSite:"none"})
+            res.cookie("user_id",result._id,{path:"/",httpOnly:false,secure:true,sameSite:"none"})
 
             let obj = Object.assign({},result._doc)
             delete obj.Password; delete obj.Token;
