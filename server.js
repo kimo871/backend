@@ -186,7 +186,7 @@ app.get("/jobs/app/",async(req,res)=>{
 
 
 
-app.listen(PORT_NO , ()=>{
+app.listen(process.env.PORT_NO, ()=>{
 
     console.log(`Server Listening Successfully on ${PORT_NO} !`)
     mongoose.connect(uri).then(()=>{
