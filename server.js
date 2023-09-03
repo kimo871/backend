@@ -51,7 +51,6 @@ app.use(session({
         sameSite:"none",
         httpOnly:false,
         expires:1000*60*60,
-        domain:"onrender.com"
     }
 }))
 
