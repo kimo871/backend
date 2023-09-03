@@ -40,11 +40,6 @@ Router.get("/Logout",(req,res)=>{
 
 
 
-Router.get("/SignIn",(req,res)=>{
-    console.log(' i listened bro')
-    res.status(200)
-    res.send()
-})
 
 Router.post("/SignIn",SignInController)
 
@@ -55,10 +50,7 @@ Router.post("/Logout",Authentication,(req,res)=>{
 })
 
 
-Router.post("/Signy",(req,res)=>{
-    console.log(req.cookies)
-    res.send()
-})
+
 
 
 Router.get("/login",Authentication,(req,res)=>{
@@ -70,7 +62,7 @@ Router.get("/login",Authentication,(req,res)=>{
         res.status(200);
     res.cookie("access_token",req.token,{path:"/"})
     res.json({"user":obj});
-})
+}).catch(err=> res.status(400).send())
 
 })
 
