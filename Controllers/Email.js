@@ -4,21 +4,19 @@ const mongoose = require("mongoose")
 
 const {Application , Job} = require("../Models/index.js")
 
-const {MAIL_USERNAME , MAIL_PASSWORD} = require("../Config/Config.js")
 
-console.log(MAIL_USERNAME,MAIL_PASSWORD)
 
 let mailer = nodemailer.createTransport({
     service : "hotmail",
     secure:false,
     auth:{
-    user : MAIL_USERNAME,
-    pass : MAIL_PASSWORD}
+    user : process.env.MAIL_USERNAME,
+    pass : process.env.MAIL_PASSWORD}
 })
 
 const MailDetails = (email, subject , content)=>{
     let MailOptions = {
-      "from" : MAIL_USERNAME,
+      "from" : process.env.MAIL_USERNAME,
       "to" : email,
       "subject" : subject,
       "text" : content

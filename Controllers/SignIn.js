@@ -2,7 +2,7 @@ const { User ,  RefreshToken } = require("../Models/index.js")
 const bcrypt  = require("bcrypt")
 const jwt = require("jsonwebtoken")
 
-const {SECRET_KEY , EXP_PER} = require("../Config/Config.js")
+
 
 console.log(process.env.SECRET_KEY)
 
@@ -26,7 +26,7 @@ const SignIn =  async(req,res)=>{
             let token;
 
           if(refresh){
-            token = jwt.sign({Email:email},SECRET_KEY,{expiresIn:EXP_PER})
+            token = jwt.sign({Email:email},process.env.SECRET_KEY,{expiresIn:process.env.EXP_PER})
             const ans = await User.updateOne({Email:email},{$set:{"Token":refresh}})
           }
 
