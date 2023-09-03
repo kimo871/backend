@@ -53,7 +53,6 @@ app.use(session({
     }
 }))
 
-app.enable('trust proxy');
 
 
 app.post("/Logout",Authentication,(req,res)=>{
