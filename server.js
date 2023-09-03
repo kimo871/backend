@@ -1,17 +1,17 @@
 const express = require('express')
 
-const {process} = require('process')
+const process = require('process')
 
-const {cors} =  require('cors')
+const cors =  require('cors')
 
 
-const {mongoose} = require('mongoose')
+const mongoose = require('mongoose')
 
-const {Router} = require("./Path/auth.js")
+const Router = require("./Path/auth.js")
 
 const Router2 = require("./Path/employer.js")
 
-const {path} = require("path")
+const path = require("path")
 
 const {PORT_NO , DB_USERNAME , DB_PASSWORD} = require("./Config/Config.js")
 console.log(DB_USERNAME,DB_PASSWORD)
