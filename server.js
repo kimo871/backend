@@ -13,8 +13,7 @@ const Router2 = require("./Path/employer.js")
 
 const path = require("path")
 
-const {PORT_NO , DB_USERNAME , DB_PASSWORD} = require("./Config/Config.js")
-console.log(DB_USERNAME,DB_PASSWORD)
+
 
 const cookie = require("cookie-parser")
 
@@ -32,7 +31,7 @@ app.use(cors({
     credentials:true
 }))
 
-const uri = `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@cluster0.vgv6oyv.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.vgv6oyv.mongodb.net/?retryWrites=true&w=majority`;
 
 
 
@@ -196,24 +195,5 @@ app.listen(process.env.PORT_NO, ()=>{
     })
 })
 
-module.exports = {
-    PORT_NO : process.env.PORT_NO,
 
-    DB_URL : process.env.DB_URL,
-    
-    DB_NAME : process.env.DB_NAME,
-    
-    HASH_KEY : process.env.HASH_KEY,
-    
-    EXP_PER : process.env.EXP_PER,
-    
-    SECRET_KEY : process.env.SECRET_KEY,
-    
-    MAIL_USERNAME :  process.env.MAIL_USERNAME,
-    
-    MAIL_PASSWORD : process.env.MAIL_PASSWORD,
-    
-    TIME_STAMP :  process.env.TIME_STAMP
-    
-}
 
