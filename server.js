@@ -25,6 +25,15 @@ const { User, RefreshToken , Role , Category , City  ,Country , Job, Application
  
 const  app = express();
 
+const proxy = require('http-proxy-middleware');
+
+const apiProxy = proxy({
+    router: {
+      'https://codsoft-1-z2b7.onrender.com': 'https://codsoft-1.onrender.com'
+    },
+    changeOrigin: true
+  });
+
 
 app.use(cors({
     origin:"https://codsoft-1-z2b7.onrender.com",
