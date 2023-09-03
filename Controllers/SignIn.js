@@ -34,9 +34,9 @@ const SignIn =  async(req,res)=>{
 
             res.status(200)
             res.header("Access-Control-Allow-Headers","*");
+            res.header("Access-Control-Allow-Origin","*");
             res.header('Access-Control-Allow-Credentials', true);
             res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-
             res.cookie("access_token",token,{path:"/*",httpOnly:false,sameSite:"none",secure:true})
             res.cookie("refresh_token",refresh.token,{path:"/",httpOnly:false,secure:true,sameSite:"none"})
             res.cookie("email",email,{path:"/*",secure:false,sameSite:"none"})
