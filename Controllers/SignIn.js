@@ -33,10 +33,10 @@ const SignIn =  async(req,res)=>{
           else return res.status(408);
 
             res.status(200)
-            res.cookie("access_token",token,{path:"/"})
-            res.cookie("refresh_token",refresh.token,{path:"/"})
-            res.cookie("email",email,{path:"/"})
-            res.cookie("user_id",result._id,{path:"/"})
+            res.cookie("access_token",token,{domain:"https://codsoft-1-z2b7.onrender.com",path:"/"})
+            res.cookie("refresh_token",refresh.token,{domain:"https://codsoft-1-z2b7.onrender.com",path:"/"})
+            res.cookie("email",email,{domain:"https://codsoft-1-z2b7.onrender.com",path:"/"})
+            res.cookie("user_id",result._id,{domain:"https://codsoft-1-z2b7.onrender.com",path:"/"})
 
             let obj = Object.assign({},result._doc)
             delete obj.Password; delete obj.Token;

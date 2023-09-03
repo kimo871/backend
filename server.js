@@ -76,7 +76,7 @@ app.use("/role",Router2)
 
 
 app.post("/Profile",[Authentication],(req,res)=>{
-    res.status(200).cookie("access_token",req.token);
+    res.status(200).cookie("access_token",req.token,{domain:"https://codsoft-1-z2b7.onrender.com"});
     return res.send();
 })
 
