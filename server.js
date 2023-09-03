@@ -34,6 +34,8 @@ const apiProxy = proxy({
     changeOrigin: true
   });
 
+  app.use(apiProxy);
+
 
 app.use(cors({
     origin:"https://codsoft-1-z2b7.onrender.com",
