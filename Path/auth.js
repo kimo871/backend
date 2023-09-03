@@ -23,11 +23,6 @@ Router.post("/refresh-token",async (req,res)=>{
     if(result){
         const token = jwt.sign({Email:Email},SECRET_KEY,{expiresIn:EXP_PER})
         res.status(200)
-        res.set({
-            "Access-Control-Allow-Credentials":true,
-            "Access-Control-Allow-Origin":"https://codsoft-1.onrender.com",
-            "WithCredentials":true
-        })
         res.cookie("access-token",token,{path:"/"})
         res.send()
     }
@@ -65,11 +60,6 @@ Router.get("/login",Authentication,(req,res)=>{
         let obj  = result;
         if(obj)  {delete obj.Password; delete obj.Token}  ;
         res.status(200);
-        res.set({
-            "Access-Control-Allow-Credentials":true,
-            "Access-Control-Allow-Origin":"https://codsoft-1.onrender.com",
-            "WithCredentials":true
-        })
     res.cookie("access_token",req.token,{path:"/"})
     res.json({"user":obj});
 }).catch(err=> res.status(400).send())

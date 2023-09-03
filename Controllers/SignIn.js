@@ -33,11 +33,6 @@ const SignIn =  async(req,res)=>{
           else return res.status(408);
 
             res.status(200)
-            res.set({
-              "Access-Control-Allow-Credentials":true,
-              "Access-Control-Allow-Origin":"https://codsoft-1.onrender.com",
-              "WithCredentials":true
-          })
             res.cookie("access_token",token,{path:"/"})
             res.cookie("refresh_token",refresh.token,{path:"/"})
             res.cookie("email",email,{path:"/"})
