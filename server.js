@@ -46,11 +46,14 @@ app.use(session({
     secret:"secret",
     resave:false,
     cookie:{
-        secure:true,
+        secure:false,
         maxAge:1000*60*60*24,
-        sameSite:"none"
+        sameSite:"none",
+        httpOnly:false
     }
 }))
+
+app.enable('trust proxy');
 
 
 app.post("/Logout",Authentication,(req,res)=>{
