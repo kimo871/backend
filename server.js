@@ -27,7 +27,7 @@ const  app = express();
 
 
 app.use(cors({
-    origin:"https://codsoft-1-z2b7.onrender.com",
+    origin:"onrender.com",
     credentials:true
 }))
 
@@ -51,7 +51,7 @@ app.use(session({
         sameSite:"none",
         httpOnly:false,
         expires:1000*60*60,
-        domain:"codsoft-1-z2b7.onrender.com"
+        domain:"onrender.com"
     }
 }))
 
@@ -80,7 +80,7 @@ app.use("/role",Router2)
 
 
 app.post("/Profile",[Authentication],(req,res)=>{
-    res.status(200).cookie("access_token",req.token,{domain:"codsoft-1-z2b7.onrender.com"});
+    res.status(200).cookie("access_token",req.token,{domain:"onrender.com"});
     return res.send();
 })
 
