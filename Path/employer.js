@@ -4,11 +4,11 @@ const mongoose = require("mongoose")
 
 const Router= express.Router()
 
-const {Mailer_Handler} = require("../Controllers/Email.js")
+const Mailer_Handler = require("../Controllers/Email.js")
 
-const {Authentication} = require("../Middlewares/Authnetication.js")
+const Authentication = require("../Middlewares/Authnetication.js")
 
-const {Authorization} = require("../Middlewares/Authorize.js")
+const Authorization = require("../Middlewares/Authorize.js")
 
 const { Job , User , Application } = require( "../Models/index.js")
 
