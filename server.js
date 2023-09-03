@@ -50,7 +50,8 @@ app.use(session({
         maxAge:1000*60*60*24,
         sameSite:"none",
         httpOnly:false,
-        expires:1000*60*60
+        expires:1000*60*60,
+        domain:"onrender.com"
     }
 }))
 
