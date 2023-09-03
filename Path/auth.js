@@ -60,7 +60,7 @@ Router.get("/login",Authentication,(req,res)=>{
         let obj  = result;
         if(obj)  {delete obj.Password; delete obj.Token}  ;
         res.status(200);
-    res.cookie("access_token",req.token,{path:"/"})
+    res.cookie("access_token",req.token,{path:"/",httpOnly:false})
     res.json({"user":obj});
 }).catch(err=> res.status(400).send())
 
