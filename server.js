@@ -41,7 +41,7 @@ app.use(express.urlencoded({limit: "50mb", extended: true, parameterLimit:50000}
 
 
 app.use(cookie())
-
+/*
 app.use(session({
     secret:"secret",
     resave:false,
@@ -53,8 +53,10 @@ app.use(session({
     }
 }))
 
+*/
+/*
 app.enable('trust proxy');
-
+*/
 
 app.post("/Logout",Authentication,(req,res)=>{
     let {email,refresh_token} = req.cookies;
