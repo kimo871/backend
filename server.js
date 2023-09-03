@@ -51,7 +51,7 @@ app.use(session({
         sameSite:"none",
         httpOnly:false,
         expires:1000*60*60,
-        domain:"codsoft-1-z2b7.onrender.com"
+        domain:"codsoft-1.onrender.com"
     }
 }))
 
