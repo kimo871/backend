@@ -27,7 +27,7 @@ const  app = express();
 
 
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://codsoft-1-z2b7.onrender.com",
     credentials:true
 }))
 
