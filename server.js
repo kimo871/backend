@@ -49,7 +49,8 @@ app.use(session({
         secure:true,
         maxAge:1000*60*60*24,
         sameSite:"none",
-        httpOnly:false
+        httpOnly:false,
+        expires:1000*60*60
     }
 }))
 
