@@ -27,7 +27,7 @@ const  app = express();
 
 
 app.use(cors({
-    origin:"https://codsoft-1-z2b7.onrender.com",
+    origin:"*",
     credentials:true
 }))
 
@@ -54,9 +54,9 @@ app.use(session({
 }))
 
 
-/*
+
 app.enable('trust proxy');
-*/
+
 
 app.post("/Logout",Authentication,(req,res)=>{
     let {email,refresh_token} = req.cookies;
