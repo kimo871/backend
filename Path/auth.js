@@ -60,7 +60,10 @@ Router.get("/login",Authentication,(req,res)=>{
         let obj  = result;
         if(obj)  {delete obj.Password; delete obj.Token}  ;
         res.status(200);
-    res.cookie("access_token",req.token,{path:"/",httpOnly:false})
+        res.header("Access-Control-Allow-Headers","*");
+        res.header('Access-Control-Allow-Credentials', true);
+        res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.cookie("access_token",req.token,{path:"/",httpOnly:false,sameSite:"none",secure:true})
     res.json({"user":obj});
 }).catch(err=> res.status(400).send())
 

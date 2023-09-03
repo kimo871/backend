@@ -21,7 +21,10 @@ Router.get("/jobs/post",[Authentication,Authorization("Company")],(req,res)=>{
         let obj=Object.assign({},{_id:result._id,Name:result.Name,Email:result.Email,DateOfBirth:result.DateOfBirth,Phone:result.Phone,Role:result.Role,Image:result.Image});
         console.log(obj)
         res.status(200);
-        res.cookie("access_token",req.token)
+        res.header("Access-Control-Allow-Headers","*");
+            res.header('Access-Control-Allow-Credentials', true);
+            res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+        res.cookie("access_token",req.token,{path:"/",httpOnly:false,sameSite:"none",secure:true})
         res.json({"user":obj});
 })
 
@@ -90,7 +93,10 @@ Router.post("/Edit/Profile",Authentication,async(req,res)=>{
         let obj=Object.assign({},{_id:result._id,Name:result.Name,Email:result.Email,DateOfBirth:result.DateOfBirth,Phone:result.Phone,Role:result.Role,Image:result.Image});
         console.log(obj)
         res.status(200);
-        res.cookie("access_token",req.token)
+        res.header("Access-Control-Allow-Headers","*");
+            res.header('Access-Control-Allow-Credentials', true);
+            res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+        res.cookie("access_token",req.token,{path:"/",httpOnly:false,sameSite:"none",secure:true})
         res.json({"user":obj});})
  })
 
@@ -102,6 +108,9 @@ Router.post("/Edit/Profile",Authentication,async(req,res)=>{
         let obj=Object.assign({},{_id:result._id,Name:result.Name,Email:result.Email,DateOfBirth:result.DateOfBirth,Phone:result.Phone,Role:result.Role,Image:result.Image});
         console.log(obj)
         res.status(200);
+        res.header("Access-Control-Allow-Headers","*");
+            res.header('Access-Control-Allow-Credentials', true);
+            res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
         res.cookie("access_token",req.token)
         res.json({"user":obj});})
  })
