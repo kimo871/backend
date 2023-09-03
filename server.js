@@ -50,7 +50,7 @@ app.use(session({
         maxAge:1000*60*60*24,
         sameSite:"none",
         httpOnly:false,
-        domain:"codsoft-1-z2b7.onrender.com"
+        domain:"codsoft-1.onrender.com"
     }
 }))
 
