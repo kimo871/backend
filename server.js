@@ -30,7 +30,7 @@ app.enable("trust proxy")
 
 const apiProxy = createProxyMiddleware({
   router: {
-    'https://codsoft-1-z2b7.onrender.com/': 'https://codsoft-1.onrender.com/',
+    'https://codsoft-1.onrender.com/' : "https://codsoft-1-z2b7.onrender.com/'",
   },
   changeOrigin: true
 });
