@@ -23,8 +23,11 @@ const Authentication = require("./Middlewares/Authnetication.js")
 const { User, RefreshToken , Role , Category , City  ,Country , Job, Application } = require("./Models/index.js")
 
  
-const  app = express();
+const proxy = require('http-proxy-middleware');
 
+const app = express();
+
+// Enable trust proxy setting
 app.enable('trust proxy');
 
 // Use proxy middleware
