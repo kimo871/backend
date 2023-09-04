@@ -37,6 +37,13 @@ const apiProxy = createProxyMiddleware({
       return `/z2b7${req.originalUrl}`;
     }
     return path;
+  },
+  onProxyRes: function (proxyRes, req, res) {
+    // Set CORS headers
+    res.append('Access-Control-Allow-Origin', req.hostname);
+    res.append('Access-Control-Allow-Credentials', 'true');
+    res.append('Access-Control-Allow-Methods', '*');
+    res.append('Access-Control-Allow-Headers', '*');
   }
 });
 
