@@ -13,7 +13,7 @@ const Router2 = require("./Path/employer.js")
 
 const path = require("path")
 
-
+const proxy  = require("http-proxy-middleware")
 
 const cookie = require("cookie-parser")
 
@@ -25,18 +25,15 @@ const { User, RefreshToken , Role , Category , City  ,Country , Job, Application
  
 const  app = express();
 
-const proxy = require('http-proxy-middleware');
+app.enable('trust proxy');
 
-const apiProxy = proxy({
-    router: {
-      'https://codsoft-1-z2b7.onrender.com': 'https://codsoft-1.onrender.com'
-    },
-    changeOrigin: true
-  });
-
-  app.enable('trust proxy');
-
-  app.use(apiProxy);
+// Use proxy middleware
+app.use(proxy({
+  router: {
+    'https://codsoft-1-z2b7.onrender.com': 'https://codsoft-1.onrender.com'
+  },
+  changeOrigin: true
+}));
 
 
 app.use(cors({
@@ -69,7 +66,7 @@ app.use(session({
 
 
 
-
+app.enable('trust proxy');
 
 
 app.post("/Logout",Authentication,(req,res)=>{

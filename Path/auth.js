@@ -5,9 +5,9 @@ const Router= express.Router()
 
 const {SignUp,Otp} = require("../Middlewares/index.js")
 
-const {SignUpController}= require("../Controllers/SignUp.js")
+const SignUpController= require("../Controllers/SignUp.js")
 
-const {SignInController} = require("../Controllers/SignIn.js")
+const SignInController = require("../Controllers/SignIn.js")
 
 const Authentication = require("../Middlewares/Authnetication.js")
 const { RefreshToken, User } = require("../Models/index.js")
@@ -24,7 +24,7 @@ Router.post("/refresh-token",async (req,res)=>{
         const token = jwt.sign({Email:Email},SECRET_KEY,{expiresIn:EXP_PER})
         res.status(200)
         res.header("Access-Control-Allow-Origin","https://codsoft-1-z2b7.onrender.com");
-        res.cookie("access-token",token,{path:"/",secure:true})
+        res.cookie("access-token",token,{path:"/",secure:true,domain:"codsoft-1-z2b7.onrender.com"})
         res.send()
     }
     else{
@@ -65,7 +65,7 @@ Router.get("/login",Authentication,(req,res)=>{
         res.header("Access-Control-Allow-Origin","https://codsoft-1-z2b7.onrender.com");
         res.header('Access-Control-Allow-Credentials', true);
         res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.cookie("access_token",req.token,{path:"/",httpOnly:false,sameSite:"none",secure:true})
+    res.cookie("access_token",req.token,{path:"/",httpOnly:false,sameSite:"none",secure:true,domain:"codsoft-1-z2b7.onrender.com"})
     res.json({"user":obj});
 }).catch(err=> res.status(400).send())
 
