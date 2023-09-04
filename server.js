@@ -30,22 +30,19 @@ app.enable("trust proxy")
 
 
 const apiProxy = createProxyMiddleware({
-  target: 'https://codsoft-1.onrender.com',
-  changeOrigin: true,
-  pathRewrite: function (path, req) {
-    if (req.hostname == 'codsoft-1-z2b7.onrender.com') {
-      return `/z2b7${req.originalUrl}`;
+    router: {
+      'codsoft-1-z2b7.onrender.com': 'https://codsoft-1.onrender.com/z2b7',
+      // Add other hostnames and targets here
+    },
+    changeOrigin: true,
+    onProxyRes: function (proxyRes, req, res) {
+      // Set CORS headers
+      res.append('Access-Control-Allow-Origin', req.hostname);
+      res.append('Access-Control-Allow-Credentials', 'true');
+      res.append('Access-Control-Allow-Methods', '*');
+      res.append('Access-Control-Allow-Headers', '*');
     }
-    return path;
-  },
-  onProxyRes: function (proxyRes, req, res) {
-    // Set CORS headers
-    res.append('Access-Control-Allow-Origin', req.hostname);
-    res.append('Access-Control-Allow-Credentials', 'true');
-    res.append('Access-Control-Allow-Methods', '*');
-    res.append('Access-Control-Allow-Headers', '*');
-  }
-});
+})
 
 app.use(apiProxy);
 
