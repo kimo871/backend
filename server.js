@@ -34,6 +34,8 @@ const apiProxy = proxy({
     changeOrigin: true
   });
 
+  app.enable('trust proxy');
+
   app.use(apiProxy);
 
 
@@ -67,7 +69,7 @@ app.use(session({
 
 
 
-app.enable('trust proxy');
+
 
 
 app.post("/Logout",Authentication,(req,res)=>{
