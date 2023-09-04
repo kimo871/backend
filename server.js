@@ -28,11 +28,16 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 app.enable("trust proxy")
 
+
 const apiProxy = createProxyMiddleware({
-  router: {
-    'https://codsoft-1.onrender.com/' : "https://codsoft-1-z2b7.onrender.com/'",
-  },
-  changeOrigin: true
+  target: 'https://codsoft-1.onrender.com',
+  changeOrigin: true,
+  pathRewrite: function (path, req) {
+    if (req.hostname == 'codsoft-1-z2b7.onrender.com') {
+      return `/z2b7${req.originalUrl}`;
+    }
+    return path;
+  }
 });
 
 app.use(apiProxy);
